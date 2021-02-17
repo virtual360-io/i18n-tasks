@@ -1,9 +1,10 @@
 AllCops:
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.4
   Exclude:
     - 'tmp/**/*'
     - 'vendor/bundle/**/*'
     - 'spec/fixtures/**/*'
+    - '**/**' #REMOVE THIS
 
 Lint/UnusedMethodArgument:
   IgnoreEmptyMethods: true
@@ -33,7 +34,7 @@ Metrics/MethodLength:
 Metrics/PerceivedComplexity:
   Max: 9
 
-Naming/UncommunicativeMethodParamName:
+Naming/MethodParameterName:
   Enabled: false
 
 Security/YAMLLoad:
